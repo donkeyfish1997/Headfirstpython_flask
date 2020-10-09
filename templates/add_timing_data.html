@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Athlete: David, DOB: 1997-3-25</title>
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/coach.css')}}" />
+</head>
+<body>
+<h1>Athlete: {{name}}, DOB: {{dob}}</h1>
+
+<form method="POST">
+<p>time</p><p><input type="text" name="time" value=""></p>
+<p>(format: 2.11)</p>
+<p></p><input type=submit value="Submit"></form>
+<p>
+<a href="/index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="generate_list.py">Select another athlete</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+</body>
+</html>
+

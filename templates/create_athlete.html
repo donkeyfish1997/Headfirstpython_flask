@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Create new Athlete</title>
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/coach.css')}}" />
+</head>
+<body>
+<h1>Create new Athlete</h1>
+
+<form action="./generate_list" method="POST">
+<p>Name</p><p><input type="text" name="Name" value=""></p>
+<p>Dob</p><p><input type="text" name="Dob" value=""></p>
+<p>(format: 1997-3-25)</p>
+<p></p><input type=submit value="creat_athlete" name="send"></form>
+<p>
+<a href="../">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+</body>
+</html>
+

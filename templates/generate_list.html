@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Coach Kelly's List of Athletes</title>
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/coach.css')}}" />
+</head>
+<body>
+<h1>Coach Kelly's List of Athletes</h1>
+
+<form method="POST">
+<p>Select an athlete from this list to work with:</p>
+
+{% for name in names %}
+<input type="radio" name="Which_athlete" value="{{name}}"> {{name}}<br />
+{% endfor %}
+
+
+<input type=submit value="Submit" name="send"></form>
+<p>{{alert}}</p>
+<p>
+<a href="../">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../create_athlete">Create athlete</a>
+
+</p>
+</body>
+</html>

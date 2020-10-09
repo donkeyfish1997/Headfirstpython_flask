@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Coach Kelly's Timing Data</title>
+<link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/coach.css')}}" />
+</head>
+<body>
+<h1>Coach Kelly's Timing Data</h1>
+
+<h2>Athlete: {{name}}, DOB: {{dob}}</h2>
+<p>the top times for this athlete are:</p>
+<ul>
+    {% for top in top3 %}
+    <li>{{top}}</li>
+    {% endfor %}
+</ul>
+<p>The entire set of timing data is: {{data}}(duplicates removed).</p>
+<p>
+<a href="../">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../generate_list">Select another athlete</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../add_timing_data?name={{name}}&dob={{dob}}">Add timing data</a>&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+</body>
+</html>
+
